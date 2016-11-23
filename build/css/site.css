@@ -8227,6 +8227,12 @@ h3 {
       color: #29AAE2; }
   .textbar .full p {
     text-align: justify; }
+  .textbar .full img {
+    height: 350px;
+    margin-top: -140px;
+    margin-bottom: -100px;
+    margin-left: 40px;
+    float: right; }
 
 .contact {
   text-align: center;
