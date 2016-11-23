@@ -1,0 +1,100 @@
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+@import '../../node_modules/font-awesome/css/font-awesome';
+
+$dark-blue: #29AAE2;
+$light-blue: #dbe8ff;
+$white-blue: #e8fffe;
+$light-grey: #cccccc;
+
+$font-header: 'Righteous', cursive;
+$font-main: 'Exo', sans-serif;
+
+body {
+  font-family: $font-main;
+}
+
+@mixin parallax() {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.align-center {
+  text-align: center;
+}
+.align-right {
+  text-align: right;
+}
+#head-nav-bar {
+  font-family: $font-header;
+  border: 0px;
+
+  @include gradient-vertical($light-blue,$dark-blue,-50%,100%);
+
+  .navbar-brand {
+    color: #e8fffe;
+    font-family: $font-header;
+    background-image: url('../img/logo.png');
+    height: 44px;
+    width: 157px;
+    margin: 3px 0px;
+    padding: 0px;
+  }
+
+  li {
+    a {
+      color: $white-blue;
+      background: none;
+    }
+    a:hover {
+      color: $light-blue;
+    }
+  }
+}
+.cloudbar {
+  background-image: url('../img/vative_clouds.jpg');
+  margin-top: 50px;
+  padding: 150px 0px;
+
+  @include parallax();
+  background-position-y: 25%;
+
+  .fill {
+    width: 100%;
+    text-align: center;
+    font-size: 1000%;
+    color: $white-blue;
+    font-family: $font-header;
+    text-transform: capitalize;
+    text-shadow: #333 0 0 20px;
+  }
+}
+.textbar {
+  .feature {
+    border: 1px solid $light-blue;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    i {
+      font-size: 100px;
+      color: $dark-blue;
+    }
+    p {
+      text-align: center;
+    }
+  }
+  margin: 30px 0;
+}
+.treebar {
+  background-image: url('../img/vative_clouds.jpg');
+  min-height: 400px;
+  @include parallax();
+  background-position-y: 50%;
+}
+.footer {
+  background-color: $light-grey;
+  color: #333;
+  text-align: center;
+  padding: 40px 0;
+}
