@@ -8156,6 +8156,20 @@ body {
 .align-right {
   text-align: right; }
 
+.align-left {
+  text-align: left; }
+
+h3 {
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 0px;
+  font-family: "Righteous", cursive;
+  text-transform: uppercase;
+  color: #666;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 20px;
+  margin-bottom: 20px; }
+
 #head-nav-bar {
   font-family: "Righteous", cursive;
   border: 0px;
@@ -8197,7 +8211,7 @@ body {
     text-shadow: #333 0 0 20px; }
 
 .textbar {
-  margin: 30px 0; }
+  padding: 60px 0; }
   .textbar .feature {
     border: 1px solid #dbe8ff;
     margin: 10px;
@@ -8205,21 +8219,39 @@ body {
     text-align: center; }
     .textbar .feature i {
       font-size: 100px;
-      color: #29AAE2; }
+      color: #29AAE2;
+      margin-bottom: 10px; }
     .textbar .feature p {
       text-align: center; }
+    .textbar .feature h3 {
+      color: #29AAE2; }
+  .textbar .full p {
+    text-align: justify; }
 
-.treebar {
+.contact {
+  text-align: center;
   background-image: url("../img/vative_clouds.jpg");
-  min-height: 400px;
+  padding: 70px 0;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 50%; }
+  .contact label {
+    text-align: center;
+    width: 100%;
+    font-size: 140%;
+    color: #888;
+    font-family: "Exo", sans-serif;
+    font-weight: normal; }
 
 .footer {
-  background-color: #cccccc;
-  color: #333;
+  background-color: #ddd;
+  color: #666;
   text-align: center;
   padding: 40px 0; }
+  .footer .align-left {
+    line-height: 200%; }
+  .footer i {
+    font-size: 200%;
+    color: #666; }

@@ -5,6 +5,7 @@ $dark-blue: #29AAE2;
 $light-blue: #dbe8ff;
 $white-blue: #e8fffe;
 $light-grey: #cccccc;
+$dark-grey: #666;
 
 $font-header: 'Righteous', cursive;
 $font-main: 'Exo', sans-serif;
@@ -26,6 +27,22 @@ body {
 .align-right {
   text-align: right;
 }
+.align-left {
+  text-align: left;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 0px;
+  font-family: $font-header;
+  text-transform: uppercase;
+  color: $dark-grey;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
 #head-nav-bar {
   font-family: $font-header;
   border: 0px;
@@ -79,22 +96,50 @@ body {
     i {
       font-size: 100px;
       color: $dark-blue;
+      margin-bottom: 10px;
     }
     p {
       text-align: center;
     }
+    h3 {
+      color: $dark-blue;
+    }
   }
-  margin: 30px 0;
+  .full {
+    p {
+      text-align: justify;
+    }
+  }
+  padding: 60px 0;
 }
-.treebar {
+.contact {
+  text-align: center;
   background-image: url('../img/vative_clouds.jpg');
-  min-height: 400px;
+  padding: 70px 0;
   @include parallax();
   background-position-y: 50%;
+
+  label {
+    text-align: center;
+    width: 100%;
+    font-size: 140%;
+    color: #888;
+    font-family: $font-main;
+    font-weight: normal;
+  }
 }
 .footer {
-  background-color: $light-grey;
-  color: #333;
+  background-color: #ddd;
+  color: $dark-grey;
   text-align: center;
   padding: 40px 0;
+
+  .align-left {
+    line-height: 200%;
+  }
+
+  i {
+    font-size: 200%;
+    color: $dark-grey;
+  }
 }
